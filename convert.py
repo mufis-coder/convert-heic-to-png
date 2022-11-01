@@ -31,9 +31,6 @@ def convert_heic_png(files, global_count):
             image.save(TargetFolder+"/thread_" + str(global_count) +
                        "img_"+str(count)+".png", format("png"))
 
-
-count = 0
-
 if __name__ == '__main__':
     files = os.listdir(SourceFolder)
 
