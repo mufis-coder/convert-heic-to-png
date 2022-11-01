@@ -38,7 +38,7 @@ if __name__ == '__main__':
     files = os.listdir(SourceFolder)
 
     # batching
-    num_batch = 2
+    num_batch = int(len(files)/1.5)
     batchs = [group for group in grouper(num_batch, files)]
 
     # multiprocess
